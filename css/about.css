@@ -1,0 +1,42 @@
+.img13 {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: -210px;
+    z-index: 96;
+}
+
+.txt7 {
+    margin-left: 430px;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+.txtw {
+    line-height: 1;
+    margin-top: -300px;
+    margin-left: 400px;
+}
+
+.txt8 {
+    z-index: 100;
+    margin-top: 80px;
+    margin-left: 400px;
+}
+
+.img14{
+    z-index: 99;
+    margin-top: -140px;
+}
+
+.img15 {
+    z-index: 100;
+    margin-top: 160px;
+    margin-left: 450px;
+}
+
+.txt1{
+    line-height: 1;
+    margin-top: 250px;
+    margin-left: 100px;
+
+}
