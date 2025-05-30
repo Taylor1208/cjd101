@@ -5,78 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的商店首頁</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
-    <img src="img/logo.png" id="logo">
+    <!-- ▼按LOGO會回首頁的動作 -->
+    <img src="img/logo.png" id="logo" onclick="page_change('index')">
     <div id="top" class="top">
         <ul class="list">
-            <li>關於我們</li>
-            <li>熱門商品</li>
-            <li>預約訂製</li>
-            <li>訂單追蹤</li>
-            <li>聲學講堂</li>
+            <!-- 點擊onclick=剛剛在js命名的動作page_change,連結到(') -->
+            <li onclick="page_change('about')">關於我們</li>
+            <li onclick="page_change('pop_times')">熱門商品</li>
+            <li onclick="page_change('reserve')">預約訂製</li>
+            <li onclick="page_change('order')">訂單追蹤</li>
+            <li onclick="page_change('know')">聲學講堂</li>
         </ul>
     </div>
 
-    <div id="home">
-        <div class="img-group img07">
-            <img src="img/07.jpg" width="450">
-            <label>降噪沉靜，自我世界只為你開啟</label>
-        </div>
-        <div class="img-group img02">
-            <img src="img/02.jpg" width="350">
-            <label>運動無界，音樂同行</label>
-        </div>
-        <div class="img-group img03">
-            <img src="img/03.jpg" width="500">
-            <label>經典有線，聆聽細節的藝術</label>
-        </div>
-        <img src="img/image.png" width="450" class="logo2">
+    <div id="content">
 
+        <div id="home">
+            <div class="img-group img07">
+                <img src="img/07.jpg" width="450">
+                <label>降噪沉靜，自我世界只為你開啟</label>
+            </div>
+            <div class="img-group img02">
+                <img src="img/02.jpg" width="350">
+                <label>運動無界，音樂同行</label>
+            </div>
+            <div class="img-group img03">
+                <img src="img/03.jpg" width="500">
+                <label>經典有線，聆聽細節的藝術</label>
+            </div>
+            <img src="img/image.png" width="450" class="logo2">
+        </div>
         <div id="home2">
-            <div class="txt1"><img src="img/txt1.png" width="700"></div>
+            <div class="txt1"><img id="txt1" src="img/txt1.png" width="700"></div>
             <div class="txt4"><img src="img/txt4.png" width="20"></div>
             <div class="img08"><img src="img/08.jpg" width="250"></div>
-            <div class="=img09"><img src="img/09.jpg" width="250"></div>
+            <div class="img09"><img src="img/09.jpg" width="250"></div>
             <div class="txtw1">
-        
-                    <p>由人工智慧與聲學技術結合，專為你的耳</p>
-                    <p>型量身定製的音頻體驗。通過高精度的耳</p>
-                    <p>部掃描，智能算法自動分析你的耳道形狀、</p>
-                    <p>聽力需求與音質偏好，精準調校每一個頻率</p>
-                    <p>範圍，讓你聽見最真實的音樂世界。</p>
-                    <p>每一次配戴，都是一次與未來科技的對話。</p>
-                    <p>從你耳朵的每一個微小曲線到聲波的每一</p>
-                    <p>個細節，這款耳機會根據你的生理結構來</p>
-                    <p>優化聲音輸出，打造無與倫比的私人聆聽</p>
-                    <p>空間。
-                </div>
-                <div class="img05"><img src="img/05.jpg" width="500"></div>
-                </p>
+
+                <p>由人工智慧與聲學技術結合，專為你的耳</p>
+                <p>型量身定製的音頻體驗。通過高精度的耳</p>
+                <p>部掃描，智能算法自動分析你的耳道形狀、</p>
+                <p>聽力需求與音質偏好，精準調校每一個頻率</p>
+                <p>範圍，讓你聽見最真實的音樂世界。</p>
+                <p>每一次配戴，都是一次與未來科技的對話。</p>
+                <p>從你耳朵的每一個微小曲線到聲波的每一</p>
+                <p>個細節，這款耳機會根據你的生理結構來</p>
+                <p>優化聲音輸出，打造無與倫比的私人聆聽</p>
+                <p>空間。
             </div>
+            <div class="img05"><img src="img/05.jpg" width="500"></div>
+            </p>
+        </div>
         <div id="home3">
             <div class="txt2"><img src="img/txt2.png" width="700"></div>
             <div class="txt5"><img src="img/txt5.png" width="20"></div>
             <div class="img10"><img src="img/10.png" width="950"></div>
-        </div>    
+        </div>
         <div id="home4">
             <img src="img/txt3.png" width="400" class="txt3">
             <div class="img11"><img src="img/11.png" width="700" class="img11"></div>
         </div>
 
-        <!-- 分隔線 -->
-        <div class="hr"></div> 
-        <div class="img12"><img src="img/12.png" width="750"></div>
-
-        
+    </div>
 
 
+
+    <!-- 分隔線 -->
+    <div class="hr"></div>
+
+    <div id="home5">
+        <div class="logo1">
+            <img id="logo1-1" src="img/logo.png" width="200">
         </div>
-
-
-
+        <div class="txt6">
+            <p id="txt6">
+                <br>台中市北區進化北路238號8樓之2 (世基金融中心)</br>
+                <br>TEL：04-2236-0613 / 0968-288068</br>
+                <br>E-MAIL：service@mor-e.com.tw</br>
+                <br>營業時間：週一至週五 AM 08：30 - PM 06：00</br>
+            </p>
+        </div>
+    </div>
+    <div id="top-btn">△</div>
 </body>
 
 </html>
