@@ -1,0 +1,157 @@
+body {
+    background: black;
+    color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#logo {
+    width: 200px;
+    margin-top: -50px;
+    z-index: 99;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#top {
+    top: 0;
+    display: inline;
+
+}
+
+.list li {
+    display: inline-block;
+    margin-right: 20px;
+    z-index: 100;
+    position: relative;
+
+}
+
+.list {
+    float: right;
+    margin: 0;
+    margin-right: 20px;
+
+}
+
+#home {
+    height: 500px;
+}
+
+.img-group {
+    z-index: 97;
+    position: relative;
+    display: grid;
+}
+
+.img07 {
+    margin-top: -200px;
+    float: right;
+    margin-right: 20px;
+}
+
+.img02 {
+    margin-top: -50px;
+    float: left;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.img03 {
+    margin-top: 100px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+.logo2 {
+    z-index: 999;
+    margin-top: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.txt1 {
+    z-index: 80;
+}
+
+.txt4 {
+    float: left;
+    margin-left: 50px;
+    margin-top: -120px;
+}
+
+.img08 {
+    margin-top: -150px;
+    margin-right: 50px;
+    z-index: 96;
+    float: right;
+}
+
+.img09 {
+    margin-top: 200px;
+    z-index: 96;
+}
+
+.txtw1 {
+    margin-top: -360px;
+    margin-left: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.txtw1 p {
+    line-height: 0;
+    z-index: 95;
+}
+
+.img05 {
+    text-align: left;
+    margin-top: -30px;
+    margin-left: 400px;
+}
+
+.txt2 {
+    z-index: 94;
+    margin-top: -10px;
+    margin-left: 200px;
+}
+
+.txt5 {
+    z-index: 95;
+    margin-top: -100px;
+    margin-left: 350px;
+}
+
+.img10 {
+    z-index: 95;
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.img11 {
+    text-align: center;
+    margin-top:20px;
+}
+
+.hr{
+    margin-top: 25px;
+    height: 2px;
+    background: linear-gradient(1deg, transparent, white, transparent);
+    margin-bottom: 20px;
+}
+
+.img12 {
+    text-align: center;
+}
