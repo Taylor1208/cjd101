@@ -1,0 +1,144 @@
+
+
+
+body {
+    background: black;
+    color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#logo {
+    width: 200px;
+    margin-top: -50px;
+    z-index: 99;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#top {
+    top: 0;
+    display: inline;
+}
+
+.list li {
+    display: inline-block;
+    margin-right: 20px;
+    z-index: 100;
+    position: relative;
+    cursor: pointer;
+    /* 滑鼠變手指 */
+    transition: color 0.3s ease;
+    /* 平滑變色 */
+}
+
+
+.list li {
+    color: white;
+    /* ✅ 原始字色，必要 */
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+ul.list li:hover {
+    color: #7eb6cd !important;
+}
+
+.list {
+    float: right;
+    margin: 0;
+    margin-right: 30px;
+}
+
+.hr {
+    margin-top: 25px;
+    height: 2px;
+    background: linear-gradient(1deg, transparent, white, transparent);
+    margin-bottom: 20px;
+}
+
+#top-btn {
+    /* 框框 */
+    border-style: solid;
+    /* 圓角弧度 */
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    /* 彈性排版 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    color: #7eb6cd;
+    /* 版面絕對位置固定 */
+    position: sticky;
+    bottom: 50px;
+    left: 80%;
+    z-index: 1000;
+}
+
+.img34 {
+    /* display: flex;
+    z-index: -1;
+    margin-top: -30px; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -160px;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+button,
+select {
+    width: 100%;
+    /* 讓每個輸入框一樣寬 */
+    max-width: 600px;
+    /* 最寬不要超過 400px */
+    padding: 10px 20px;
+    /* 內距：上下 10px、左右 20px */
+    margin-bottom: 15px;
+    /* 每個輸入框下面留一點空間 */
+    border: none;
+    /* 拿掉外框 */
+    border-radius: 999px;
+    /* 超圓角，做出「膠囊形狀」 */
+    background-color: #f2f2f2;
+    /* 淺灰白背景 */
+    font-size: 24px;
+    /* 字大小 */
+    box-sizing: border-box;
+    /* 不會爆框 */
+}
+
+input::placeholder {
+    color: #888;
+    /* Placeholder 字變灰灰的 */
+}
+
+/* 提交按鈕的樣式 */
+button[type="submit"] {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+.res-txt {
+    position: relative;
+    top: -100px;
+    right: -100px;
+}

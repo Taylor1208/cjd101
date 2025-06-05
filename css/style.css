@@ -1,3 +1,9 @@
+
+
+
+
+
+
 body {
     background: black;
     color: white;
@@ -27,15 +33,30 @@ ul {
     margin-right: 20px;
     z-index: 100;
     position: relative;
+    cursor: pointer;
+    /* 滑鼠變手指 */
+    transition: color 0.3s ease;
+    /* 平滑變色 */
+}
 
+
+.list li {
+    color: white;
+    /* ✅ 原始字色，必要 */
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+ul.list li:hover {
+  color: #7eb6cd !important;
 }
 
 .list {
     float: right;
     margin: 0;
-    margin-right: 20px;
-
+    margin-right: 30px;
 }
+
 .hr {
     margin-top: 25px;
     height: 2px;

@@ -9,14 +9,23 @@
     <script src="js/main.js"></script>
 </head>
 
+
+
 <body>
     <!-- ▼按LOGO會回首頁的動作 -->
     <img src="img/logo.png" id="logo" onclick="page_change('index')">
     <div id="top" class="top">
         <ul class="list">
             <!-- 點擊onclick=剛剛在js命名的動作page_change,連結到(') -->
-            <li onclick="page_change('about')">關於我們</li>
-            <li onclick="page_change('pop_times')">熱門商品</li>
+            <!-- <li ><a href="/about.html">關於我們</a></li>
+            <li><a href="/cus.html">訂製流程</a></li>
+            <li ><a href="/pop.html">熱門商品</a></li>
+            <li ><a href="/reserve.html">預約訂製</a></li>
+            <li ><a href="/order.html">訂單追蹤</a></li>
+            <li ><a href="/know.html">聲學講堂</a></li> -->
+
+            <li onclick="page_change('cus')">訂製流程</li>
+            <li onclick="page_change('pop')">熱門商品</li>
             <li onclick="page_change('reserve')">預約訂製</li>
             <li onclick="page_change('order')">訂單追蹤</li>
             <li onclick="page_change('know')">聲學講堂</li>
@@ -27,23 +36,23 @@
 
         <div id="home">
             <div class="img-group img07">
-                <img src="img/07.jpg" width="450">
+                <img src="img/07.jpg" width="450" class="img-hide">
                 <label>降噪沉靜，自我世界只為你開啟</label>
             </div>
             <div class="img-group img02">
-                <img src="img/02.jpg" width="350">
+                <img src="img/02.jpg" width="350" class="img-hide">
                 <label>運動無界，音樂同行</label>
             </div>
             <div class="img-group img03">
-                <img src="img/03.jpg" width="500">
+                <img src="img/03.jpg" width="500" class="img-hide">
                 <label>經典有線，聆聽細節的藝術</label>
             </div>
             <img src="img/image.png" width="450" class="logo2">
         </div>
         <div id="home2">
-            <div class="txt1"><img id="txt1" src="img/txt1.png" width="700"></div>
+            <div class="txt1"><img id="txt1" src="img/txt1.png" width="800"></div>
             <div class="txt4"><img src="img/txt4.png" width="20"></div>
-            <div class="img08"><img src="img/08.jpg" width="250"></div>
+            <div class="img08"><img src="img/08.jpg" width="350"></div>
             <div class="img09"><img src="img/09.jpg" width="250"></div>
             <div class="txtw1">
 
@@ -64,11 +73,11 @@
         <div id="home3">
             <div class="txt2"><img src="img/txt2.png" width="700"></div>
             <div class="txt5"><img src="img/txt5.png" width="20"></div>
-            <div class="img10"><img src="img/10.png" width="950"></div>
+            <div class="img10"><img src="img/10.png" width="1200"></div>
         </div>
         <div id="home4">
             <img src="img/txt3.png" width="400" class="txt3">
-            <div class="img11"><img src="img/11.png" width="700" class="img11"></div>
+            <div class="img11"><img src="img/11.png" width="1200" class="img11"></div>
         </div>
 
     </div>
@@ -91,7 +100,38 @@
             </p>
         </div>
     </div>
-    <div id="top-btn">△</div>
+    <div id="top-btn" onclick="scrollToTop()">△</div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script>
+        // ✅ 讓所有 #home 區塊內的圖片都有視差效果與淡出
+        const parallaxImages = document.querySelectorAll('#home img');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            parallaxImages.forEach(img => {
+                // 視差效果（向下滑動）
+                img.style.transform = `translateY(${scrollY * 0.2}px)`;
+
+                // 超過 450px 時淡出
+                if (scrollY > 450) {
+                    img.classList.add('fade-out');
+                } else {
+                    img.classList.remove('fade-out');
+                }
+            });
+        });
+    </script>
+
+
+
 </body>
 
 </html>

@@ -1,0 +1,166 @@
+/* .img19 {
+    display: flex;
+    z-index: -1;
+    margin-top: -210px;
+    margin-left: -300px;
+} */
+
+
+
+
+.cus-top {
+    position: relative;
+    /* 讓你可以用 top, left 等調整位置 */
+    top: -200px;
+    /* 從頁面最上方開始 */
+    left: 0;
+    margin: 0;
+    /* 確保沒有多餘外距 */
+    padding: 0;
+    top: -200px;
+    /* 你可以慢慢增加負值或正值，微調往上或往下 */
+    /* 例如： top: -20px; left: 10px; */
+}
+
+.img19 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    display: flex;
+    z-index: -99;
+    /* 放到最下層 */
+    margin-top: -100px;
+    /* 根據需要調整 */
+}
+
+.img19-img {
+    width: 1400px;
+    /* ✅ 放大圖片（你可以改成你要的大小） */
+    max-width: 100%;
+    /* ✅ 手機畫面會自動縮放 */
+    display: flex;
+    margin-top: -100px;
+}
+
+
+
+.cus-txt9 {
+    margin-top: 100px;
+    position: relative;
+    top: -550px;
+    left: 35px;
+    z-index: 2;
+}
+
+
+.cus-txt11 {
+    z-index: 99;
+    position: relative;
+    top: -350px;
+    left: 300px;
+
+}
+
+.cus-txt10 {
+    z-index: 3;
+    position: relative;
+    top: -300px;
+    right: 750px;
+
+}
+
+.cus-txtimg {
+    position: relative;
+    top: -400px;
+}
+
+.cus-txt13 {
+    position: relative;
+    left: 10px;
+}
+
+.img20 {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cus-txtimg1 {
+    position: relative;
+    top: -150px;
+}
+
+.img21 {
+    position: relative;
+    left: 150px;
+    top: -10px;
+}
+
+.img22 {
+    position: relative;
+    right: -50px;
+    left: 200px;
+}
+
+#cus-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: -20px;
+}
+
+.cus-txtw {
+    position: relative;
+    right: 50px;
+    top: 100px;
+}
+
+.ada {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cus-txtw1 {
+    position: relative;
+    right: -600px;
+    top: -300px;
+}
+
+.img23 {
+    position: relative;
+    right: -50px;
+    left: 200px;
+    top: 100px;
+}
+
+.jack {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 200px;
+}
+
+.start-btn {
+    border-radius: 8px;
+    background-color: #d9d9d9;
+    /* 淡灰色背景 */
+    color: #000000;
+    /* 黑色文字 */
+    border: none;
+    /* 無邊框 */
+    font-size: 24px;
+    /* 字體大小可依需求調整 */
+    padding: 10px 20px;
+    /* 內距 */
+    cursor: pointer;
+    /* 滑鼠變手指 */
+    font-family: 'Noto Sans TC', sans-serif;
+    /* 字型可選繁中 */
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #5c5656;
+    /* 滑過時稍微變深 */
+}

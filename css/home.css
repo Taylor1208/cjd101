@@ -1,3 +1,5 @@
+
+
 body {
     background: black;
     color: white;
@@ -39,8 +41,19 @@ ul {
 }
 
 #home {
-    height: 500px;
+    height: 200px;
 }
+
+#home img {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 .img-group {
     z-index: 97;
@@ -68,49 +81,67 @@ ul {
 
 }
 
+
+.img-group img {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
+}
+
+.img-group img.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.img-hide {
+    transition: opacity 0.5s ease;
+}
+
+
 .logo2 {
     z-index: 999;
     margin-top: 100px;
     position: absolute;
-    top: 50px;
-    left: 50%;
+    top: -450px;
+    left: 400px;
     transform: translateX(-50%);
     z-index: 9999;
 }
 
 #home2 {
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .txt1 {
     z-index: 80;
+    margin-left: 100px;
 }
 
 #txt1 {
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .txt4 {
     float: left;
-    margin-left: 50px;
+    margin-left: 200px;
     margin-top: -120px;
 }
 
 .img08 {
     margin-top: -150px;
-    margin-right: 50px;
+    margin-right: 200px;
     z-index: 96;
     float: right;
 }
 
 .img09 {
     margin-top: 200px;
+    margin-left: 100px;
     z-index: 96;
 }
 
 .txtw1 {
     margin-top: -300px;
-    margin-left: 300px;
+    margin-left: 400px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -125,19 +156,19 @@ ul {
 .img05 {
     text-align: left;
     margin-top: -30px;
-    margin-left: 400px;
+    margin-left: 600px;
 }
 
 .txt2 {
     z-index: 94;
     margin-top: -10px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .txt5 {
     z-index: 95;
     margin-top: -100px;
-    margin-left: 350px;
+    margin-left: 250px;
 }
 
 .img10 {
@@ -146,6 +177,11 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: 0;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .img11 {
@@ -205,6 +241,6 @@ ul {
     z-index: 1000;
 }
 
-#ff{
+#ff {
     font-family: Cinzel;
 }

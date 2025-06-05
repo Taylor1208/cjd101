@@ -1,0 +1,65 @@
+
+
+
+html, body {
+    overflow-x: hidden;  /* 強制隱藏橫向滾動條 */
+}
+
+
+
+.img24 {
+    /* display: flex;
+    z-index: -1;
+    margin-top: -30px; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -165px;
+    
+}
+
+.pop-txt {
+    line-height: 1;
+    font-size: 24px;
+    position: relative;
+    top: -90px;
+    left: 40px;
+}
+
+.pop-txt2 {
+    font-size: 36px;
+    position: relative;
+    top: -470px;
+    right: -180px;
+    z-index: 1;
+}
+
+#pop-list {
+    width: 90%;
+    max-width: 100%; 
+    padding: 0 5%; 
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* z-index: 1; */
+    margin-top: -450px;
+    margin-left: 150px;
+}
+
+.pop25 {
+    line-height: 0.8;
+    font-size: 20px;
+}
+
+.popc25 {
+    font-size: 30px;
+    color: #9FD2EA;
+    width: 200px;
+    /* 或設定成跟 .pop25 寬度一樣的固定寬度 */
+    text-align: center;
+    /* 文字水平置中 */
+
+}

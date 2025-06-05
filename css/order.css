@@ -1,0 +1,93 @@
+
+
+.img35 {
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    margin-top: -500px;
+    margin-left: 0;
+    z-index: -99;
+    width: 100%;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -160px;
+}
+
+
+
+
+
+input[type="text"],
+button,
+select {
+    width: 100%;
+    /* 讓每個輸入框一樣寬 */
+    max-width: 600px;
+    /* 最寬不要超過 400px */
+    padding: 10px 20px;
+    /* 內距：上下 10px、左右 20px */
+    margin-bottom: 15px;
+    /* 每個輸入框下面留一點空間 */
+    border: none;
+    /* 拿掉外框 */
+    border-radius: 999px;
+    /* 超圓角，做出「膠囊形狀」 */
+    background-color: #f2f2f2;
+    /* 淺灰白背景 */
+    font-size: 24px;
+    /* 字大小 */
+    box-sizing: border-box;
+    /* 不會爆框 */
+}
+
+input::name {
+    color: #888;
+    /* Placeholder 字變灰灰的 */
+}
+
+.order-txt {
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    margin-top: 0;
+    /* 拿掉負邊距 */
+    margin-left: 0;
+    /* 拿掉負邊距 */
+    z-index: 0;
+    width: 100%;
+    position: relative;
+    top: -500px;
+
+}
+
+button[type="submit"] {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 0;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+
+    z-index: 0;
+    width: 100px;
+    position: relative;
+    top: -500px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+
+}

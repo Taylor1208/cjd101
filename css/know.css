@@ -1,0 +1,54 @@
+
+
+.img36 {
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    margin-top: -500px;
+    margin-left: 0;
+    z-index: -99;
+    width: 100%;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -160px;
+}
+
+.know-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -100px;
+}
+
+.know-list img {
+    margin-left: 150px;
+}
+
+.know-txt {
+    line-height: 0.8;
+    font-size: 20px;
+}
+
+.know-txt1 {
+    line-height: 0.8;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+}
+
+.know-txt2 {
+    margin-top: 100px;
+}
+
+.img38 {
+    margin-top: 100px;
+}
+
+.img39 {
+    margin-top: 100px;
+}
+
+.img40 {
+    margin-top: 100px;
+}

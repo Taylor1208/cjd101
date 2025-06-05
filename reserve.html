@@ -1,0 +1,65 @@
+<head>
+    <link rel="stylesheet" href="css/reserve.css">
+</head>
+
+<body>
+    <img src="img/34.png" width="1400" class="img34">
+
+    <form>
+        <div class="res-txt">
+            <label style="font-size: 30px;">姓名：</label>
+            <br>
+            <br>
+
+            <input type="text" placeholder="請輸入您的姓名">
+            <br>
+            <br>
+
+            <label style="font-size: 30px;">電話：</label>
+            <br>
+            <br>
+            <input type="text" placeholder="請輸入您的電話">
+            <br>
+            <br>
+
+            <label style="font-size: 30px;">E-MAIL：</label>
+            <br>
+            <br>
+            <input type="email" placeholder="請輸入您的 Email">
+            <br>
+            <br>
+
+            <label style="font-size: 30px;">預約日期：</label>
+            <br>
+            <br>
+            <input type="date">
+            <br>
+            <br>
+
+            <label style="font-size: 30px;">預約時間：</label>
+            <br>
+            <br>
+            <input type="time">
+            <br>
+            <br>
+
+            <button type="submit">提交</button>
+
+        </div>
+
+    </form>
+    <script>
+        function showAlert(event) {
+            event.preventDefault(); // 防止表單直接送出（刷新頁面）
+            alert("已送出預約申請！");
+
+            // 如果你真的想送出資料到後端，可以在這裡加上：
+            // document.querySelector('form').submit();
+        }
+    </script>
+
+
+
+
+
+</body>
