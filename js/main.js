@@ -7,7 +7,12 @@ function page_change(page_name) {
     let content = document.getElementById("content");
     // let url(網址的意思，自己命名用) = "http://127.0.0.1:5500/"(電腦的ip位址，這是本機ip位址)，+ page_name(參數，這個參數會在index裡面設定好)，+ ".html"(這是網頁的副檔名) 就可以叫出詳細且完整的網址
     // 這個網址是指在本機電腦上，開啟的網頁
-    let url = "https://taylor1208.github.io/cjd101/" + page_name + ".html"
+    
+    //GIT
+    // let url = "https://taylor1208.github.io/cjd101/" + page_name + ".html"
+    //測試
+    let url = "http://127.0.0.1:5500/" + page_name + ".html"
+
     // http://127.0.0.1:5500/about.html
     fetch(url)
         .then(async res => {

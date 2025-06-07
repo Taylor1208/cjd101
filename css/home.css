@@ -65,6 +65,11 @@ ul {
     margin-top: -200px;
     float: right;
     margin-right: 20px;
+    
+}
+.img07 img{
+    max-width: 450px;
+    width: auto;
 }
 
 .img02 {
@@ -74,11 +79,20 @@ ul {
     text-align: right;
 }
 
+.img02 img {
+    max-width: 450px;
+    width: auto;
+}
+
 .img03 {
     margin-top: 100px;
     float: right;
     margin-right: 20px;
+}
 
+.img03 img {
+    max-width: 500px;
+    width: auto;
 }
 
 
@@ -102,10 +116,12 @@ ul {
     margin-top: 100px;
     position: absolute;
     top: -450px;
-    left: 400px;
     transform: translateX(-50%);
     z-index: 9999;
+    max-width: 550px;
+    width: auto;
 }
+
 
 #home2 {
     margin-top: 150px;
@@ -120,10 +136,25 @@ ul {
     margin-top: 10px;
 }
 
+.txt1 img {
+    max-width: 800px;
+    width: auto;
+}
+
+.txt3 {
+    max-width: 600px;
+    width: auto;
+}
+
 .txt4 {
     float: left;
     margin-left: 200px;
     margin-top: -120px;
+}
+
+.txt4 img {
+    max-width: 20px;
+    width: auto;
 }
 
 .img08 {
@@ -133,10 +164,20 @@ ul {
     float: right;
 }
 
+.img08 img{
+    max-width: 350px;
+    width: auto;
+}
+
 .img09 {
     margin-top: 200px;
     margin-left: 100px;
     z-index: 96;
+}
+
+.img09 img{
+    max-width: 250px;
+    width: auto;
 }
 
 .txtw1 {
@@ -159,16 +200,31 @@ ul {
     margin-left: 600px;
 }
 
+.img05 img{
+    max-width: 500px;
+    width: auto;
+}
+
 .txt2 {
     z-index: 94;
     margin-top: -10px;
     margin-left: 100px;
 }
 
+.txt2 img{
+    max-width: 700px;
+    width: auto;
+}
+
 .txt5 {
     z-index: 95;
     margin-top: -100px;
     margin-left: 250px;
+}
+
+.txt5 img{
+    max-width: 20px;
+    width: auto;
 }
 
 .img10 {
@@ -181,12 +237,21 @@ ul {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
 
+.img10 img{
+    max-width: 1200px;
+    width: auto;
 }
 
 .img11 {
     text-align: center;
     margin-top: 20px;
+}
+
+.img11 {
+    max-width: 1200px;
+    width: auto;
 }
 
 .hr {
@@ -205,6 +270,11 @@ ul {
 .logo1 {
     z-index: 95;
     margin-left: 0;
+}
+
+#logo1-1 {
+    max-width: 200px;
+    width: auto;
 }
 
 #logo1-1 {
@@ -243,4 +313,22 @@ ul {
 
 #ff {
     font-family: Cinzel;
+}
+
+@media(min-width: 540px) {
+    .box1 {
+        background: lightyellow;
+    }
+}
+
+@media(min-width: 768px) {
+    .box1 {
+        background: orange;
+    }
+}
+
+@media(min-width: 920px) {
+    .box1 {
+        background: lightpink;
+    }
 }

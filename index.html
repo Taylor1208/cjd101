@@ -16,14 +16,6 @@
     <img src="img/logo.png" id="logo" onclick="page_change('index')">
     <div id="top" class="top">
         <ul class="list">
-            <!-- 點擊onclick=剛剛在js命名的動作page_change,連結到(') -->
-            <!-- <li ><a href="/about.html">關於我們</a></li>
-            <li><a href="/cus.html">訂製流程</a></li>
-            <li ><a href="/pop.html">熱門商品</a></li>
-            <li ><a href="/reserve.html">預約訂製</a></li>
-            <li ><a href="/order.html">訂單追蹤</a></li>
-            <li ><a href="/know.html">聲學講堂</a></li> -->
-
             <li onclick="page_change('cus')">訂製流程</li>
             <li onclick="page_change('pop')">熱門商品</li>
             <li onclick="page_change('reserve')">預約訂製</li>
@@ -36,24 +28,24 @@
 
         <div id="home">
             <div class="img-group img07">
-                <img src="img/07.jpg" width="450" class="img-hide">
+                <img src="img/07.jpg" class="img-hide">
                 <label>降噪沉靜，自我世界只為你開啟</label>
             </div>
             <div class="img-group img02">
-                <img src="img/02.jpg" width="350" class="img-hide">
+                <img src="img/02.jpg" class="img-hide">
                 <label>運動無界，音樂同行</label>
             </div>
             <div class="img-group img03">
-                <img src="img/03.jpg" width="500" class="img-hide">
+                <img src="img/03.jpg" class="img-hide">
                 <label>經典有線，聆聽細節的藝術</label>
             </div>
-            <img src="img/image.png" width="450" class="logo2">
+            <img src="img/image.png" class="logo2">
         </div>
         <div id="home2">
-            <div class="txt1"><img id="txt1" src="img/txt1.png" width="800"></div>
-            <div class="txt4"><img src="img/txt4.png" width="20"></div>
-            <div class="img08"><img src="img/08.jpg" width="350"></div>
-            <div class="img09"><img src="img/09.jpg" width="250"></div>
+            <div class="txt1"><img id="txt1" src="img/txt1.png"></div>
+            <div class="txt4"><img src="img/txt4.png"></div>
+            <div class="img08"><img src="img/08.jpg"></div>
+            <div class="img09"><img src="img/09.jpg"></div>
             <div class="txtw1">
 
                 <p>由人工智慧與聲學技術結合，專為你的耳</p>
@@ -67,17 +59,17 @@
                 <p>優化聲音輸出，打造無與倫比的私人聆聽</p>
                 <p>空間。
             </div>
-            <div class="img05"><img src="img/05.jpg" width="500"></div>
+            <div class="img05"><img src="img/05.jpg"></div>
             </p>
         </div>
         <div id="home3">
-            <div class="txt2"><img src="img/txt2.png" width="700"></div>
-            <div class="txt5"><img src="img/txt5.png" width="20"></div>
-            <div class="img10"><img src="img/10.png" width="1200"></div>
+            <div class="txt2"><img src="img/txt2.png"></div>
+            <div class="txt5"><img src="img/txt5.png"></div>
+            <div class="img10"><img src="img/10.png"></div>
         </div>
         <div id="home4">
-            <img src="img/txt3.png" width="400" class="txt3">
-            <div class="img11"><img src="img/11.png" width="1200" class="img11"></div>
+            <img src="img/txt3.png" class="txt3">
+            <div class="img11"><img src="img/11.png" class="img11"></div>
         </div>
 
     </div>
@@ -89,7 +81,7 @@
 
     <div id="home5">
         <div class="logo1">
-            <img id="logo1-1" src="img/logo.png" width="200">
+            <img id="logo1-1" src="img/logo.png" >
         </div>
         <div class="txt6">
             <p id="txt6">
@@ -118,7 +110,12 @@
 
             parallaxImages.forEach(img => {
                 // 視差效果（向下滑動）
-                img.style.transform = `translateY(${scrollY * 0.2}px)`;
+                if(img.className == "logo2"){
+                    img.style.transform = `translate(-50%,${scrollY * 0.2}px)`;
+                }else{
+                    img.style.transform = `translateY(${scrollY * 0.2}px)`;
+
+                }
 
                 // 超過 450px 時淡出
                 if (scrollY > 450) {
