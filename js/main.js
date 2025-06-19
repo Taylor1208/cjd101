@@ -35,12 +35,15 @@ function page_change(page_name) {
 function hub_open() {
     const hubList = document.getElementById("hub-listall");
     hubList.classList.toggle("open");
+    const end = document.getElementById("end")
+    end.style.display = 'block';
 }
 
 function hub_end() {
     const hubList = document.getElementById("hub-listall");
     const endElement = document.getElementById("end");
     hubList.classList.remove("open");
+    end.style.display = 'none';
 }
 
 

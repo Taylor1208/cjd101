@@ -7,6 +7,7 @@ body {
 }
 
 #end {
+    display: none;
     position: fixed;
     /* 固定在視窗上 */
     top: 0;
@@ -17,7 +18,7 @@ body {
     /* 寬度佔滿整個視窗 */
     height: 100vh;
     /* 高度佔滿整個視窗 */
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
     /* 背景顏色可根據需要設置 */
     z-index: 9998;
     /* 設定z-index為負值，使其在其他元素之下 */
