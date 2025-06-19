@@ -103,6 +103,12 @@ body {
 
 @media(max-width: 1022px) {
 
+
+    .img24 {
+        display: flex;
+        margin-top: -35%;
+    }
+
     #logo {
         display: none;
 

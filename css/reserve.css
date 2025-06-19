@@ -1,6 +1,3 @@
-
-
-
 body {
     background: black;
     color: white;
@@ -81,15 +78,18 @@ ul.list li:hover {
     z-index: 1000;
 }
 
-.img34 {
-    /* display: flex;
-    z-index: -1;
-    margin-top: -30px; */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -160px;
 
+.img34 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/34.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
 }
 
 input[type="text"],
@@ -141,4 +141,32 @@ button[type="submit"]:hover {
     position: relative;
     top: -100px;
     right: -100px;
+}
+
+@media(max-width: 1022px) {
+
+    .img34 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/34.png');
+        background-size: cover;
+        background-position: center top;
+        z-index: -1;
+        /* 背景層級最下 */
+    }
+
+    .hub {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        /* 確保漢堡選單在上層 */
+    }
+
+
+
 }
