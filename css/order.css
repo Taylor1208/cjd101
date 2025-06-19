@@ -20,7 +20,7 @@
 
 
 input[type="text"],
-button,
+.submit,
 select {
     width: 100%;
     /* 讓每個輸入框一樣寬 */

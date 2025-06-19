@@ -1,33 +1,46 @@
-
-
-
-html, body {
-    overflow-x: hidden;  /* 強制隱藏橫向滾動條 */
+html,
+body {
+    overflow-x: hidden;
+    /* 強制隱藏橫向滾動條 */
 }
 
 
 
 .img24 {
-    /* display: flex;
-    z-index: -1;
-    margin-top: -30px; */
+    width: 100%;
+    height: auto;
+    /* width="1400" */
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     top: -165px;
-    
 }
+
+.img25,
+.img26,
+.img27,
+.img28,
+.img29,
+.img30,
+.img31,
+.img32,
+.img33 {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
 
 .pop-txt {
     line-height: 1;
-    font-size: 24px;
+    font-size: clamp(14px, 2vw, 24px);
     position: relative;
     top: -90px;
     left: 40px;
 }
 
 .pop-txt2 {
-    font-size: 36px;
+    font-size: clamp(24px, 4vw, 48px);
     position: relative;
     top: -470px;
     right: -180px;
@@ -36,8 +49,8 @@ html, body {
 
 #pop-list {
     width: 90%;
-    max-width: 100%; 
-    padding: 0 5%; 
+    max-width: 100%;
+    padding: 0 5%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
@@ -49,17 +62,93 @@ html, body {
     margin-left: 150px;
 }
 
+
+
 .pop25 {
-    line-height: 0.8;
-    font-size: 20px;
+    line-height: 2;
+    display: block;
+    max-width: 80%;
+    word-break: break-word;
+    font-size: clamp(12px, 2vw, 18px);
 }
 
+
+
 .popc25 {
-    font-size: 30px;
+    font-size: clamp(16px, 2.5vw, 30px);
     color: #9FD2EA;
-    width: 200px;
     /* 或設定成跟 .pop25 寬度一樣的固定寬度 */
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 15%;
     /* 文字水平置中 */
+    margin-top: -8%;
+    line-height: 1;
+}
+
+
+.popc25 label {
+    display: block;
+    /* 區塊元素，允許換行 */
+    max-width: 80%;
+    /* 最大寬度不超過容器 */
+    word-break: break-word;
+    /* 單字過長也能斷行 */
+    overflow-wrap: break-word;
+    /* 支援新瀏覽器 */
+    font-size: clamp(14px, 2vw, 18px);
+    /* 根據視窗寬度自動縮放文字 */
+    line-height: 2;
+    margin-top: 50%;
+}
+
+@media(max-width: 1022px) {
+
+    #logo {
+        display: none;
+
+    }
+
+    #pop-list {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    .img25,
+    .img26,
+    .img27,
+    .img28,
+    .img29,
+    .img30,
+    .img31,
+    .img32,
+    .img33 {
+        width: 25%;
+        height: auto;
+        display: block;
+    }
+
+    .pop-txt2 {
+        margin-top: 30%;
+    }
+
+    .pop25 {
+        width: 25%;
+        line-height: 2;
+        word-wrap: break-word;
+    }
+
+    .popc25 {
+        width: 25%;
+        margin-top: -2%;
+        display: flex;
+        flex-direction: column;
+        /* 垂直排列項目 */
+        align-items: center;
+        /* 水平置中 */
+        margin-left: -0%;
+    }
+
+
+
 
 }

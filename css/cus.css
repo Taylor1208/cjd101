@@ -1,166 +1,257 @@
-/* .img19 {
-    display: flex;
-    z-index: -1;
-    margin-top: -210px;
-    margin-left: -300px;
-} */
+body {
 
-
-
+    font-family: 'Noto Sans TC', sans-serif;
+}
 
 .cus-top {
-    position: relative;
-    /* 讓你可以用 top, left 等調整位置 */
-    top: -200px;
-    /* 從頁面最上方開始 */
-    left: 0;
-    margin: 0;
-    /* 確保沒有多餘外距 */
-    padding: 0;
-    top: -200px;
-    /* 你可以慢慢增加負值或正值，微調往上或往下 */
-    /* 例如： top: -20px; left: 10px; */
+    height: 100vh;
 }
+
 
 .img19 {
+    position: absolute;
+    top: -1%;
+    left: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    /* 水平置中 */
-    display: flex;
-    z-index: -99;
-    /* 放到最下層 */
-    margin-top: -100px;
-    /* 根據需要調整 */
-}
-
-.img19-img {
-    width: 1400px;
-    /* ✅ 放大圖片（你可以改成你要的大小） */
-    max-width: 100%;
-    /* ✅ 手機畫面會自動縮放 */
-    display: flex;
-    margin-top: -100px;
+    height: 100vh;
+    background-image: url('../img/19.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    z-index: -1;
 }
 
 
 
-.cus-txt9 {
-    margin-top: 100px;
-    position: relative;
-    top: -550px;
-    left: 35px;
-    z-index: 2;
+.cus-txt12 {
+    width: 30%;
+    /* 根據畫面百分比縮放，或你可調整 */
+    height: auto;
+    display: block;
+    margin-top: -25%;
+    margin-left: 15%;
 }
 
 
-.cus-txt11 {
-    z-index: 99;
-    position: relative;
-    top: -350px;
-    left: 300px;
-
-}
-
-.cus-txt10 {
-    z-index: 3;
-    position: relative;
-    top: -300px;
-    right: 750px;
-
-}
-
-.cus-txtimg {
-    position: relative;
-    top: -400px;
+.cus-txt15 {
+    /* 根據畫面百分比縮放，或你可調整 */
+    height: auto;
+    width: 2%;
+    margin-top: -7%;
+    margin-left: 45%;
 }
 
 .cus-txt13 {
-    position: relative;
-    left: 10px;
+    /* 根據畫面百分比縮放，或你可調整 */
+    height: auto;
+    width: 2%;
+    margin-top: -7%;
+    margin-left: 48%;
 }
 
-.img20 {
-    position: relative;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+.img20-1 {
+    width: 100%;
+    /* 固定寬度 */
+    height: auto;
+    /* 等比例縮放 */
+    display: block;
 }
 
-.cus-txtimg1 {
-    position: relative;
-    top: -150px;
+.cus-txtimg {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8%;
+    /* 圖片間距 */
+    padding: 20px;
+    margin-top: 2%;
+}
+
+.cus-txtimg-1 label {
+    display: flex;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 110%;
+}
+
+.cus-txt14 {
+    width: 30%;
+    /* 根據畫面百分比縮放，或你可調整 */
+    height: auto;
+    display: block;
+    margin-top: 5%;
+    margin-left: 15%;
 }
 
 .img21 {
-    position: relative;
-    left: 150px;
-    top: -10px;
+    /* width="600" height="50" */
+    max-width: 100%;
+    height: auto;
 }
 
-.img22 {
-    position: relative;
-    right: -50px;
-    left: 200px;
+
+.cus-top {
+    padding-top: 150px;
+    text-align: center;
 }
+
+.cus-txtimg1 {
+    margin: 50px auto;
+    text-align: center;
+}
+
 
 #cus-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    top: -20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 80px auto;
+    padding: 20px;
 }
 
-.cus-txtw {
-    position: relative;
-    right: 50px;
-    top: 100px;
-}
 
-.ada {
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.cus-txtw1 {
-    position: relative;
-    right: -600px;
-    top: -300px;
-}
-
-.img23 {
-    position: relative;
-    right: -50px;
-    left: 200px;
-    top: 100px;
-}
-
-.jack {
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 200px;
-}
-
-.start-btn {
-    border-radius: 8px;
-    background-color: #d9d9d9;
-    /* 淡灰色背景 */
-    color: #000000;
-    /* 黑色文字 */
-    border: none;
-    /* 無邊框 */
-    font-size: 24px;
-    /* 字體大小可依需求調整 */
-    padding: 10px 20px;
-    /* 內距 */
-    cursor: pointer;
-    /* 滑鼠變手指 */
-    font-family: 'Noto Sans TC', sans-serif;
-    /* 字型可選繁中 */
-    transition: background-color 0.3s ease;
-}
 
 .start-btn:hover {
     background-color: #5c5656;
-    /* 滑過時稍微變深 */
+}
+
+.img22 {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.img23 {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.ada {
+    font-size: 200%;
+}
+
+.cus-txtw {
+    /* padding-right: 40%;
+    margin-left: -20%; */
+    line-height: 2;
+    font-size: 100%;
+}
+
+.cus-ada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.cus-jack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.start-btn1 {
+    max-width: 100%;
+    height: auto;
+    margin-top: -15%;
+    margin-left: 33%;
+}
+
+
+.jack {
+    font-size: 200%;
+}
+
+.start-btn2 {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 33%;
+}
+
+.start-btn2:hover {
+    background-color: #92BDD0;
+    /* 或你想要的顏色 */
+    color: white;
+    /* 可選：文字也變色 */
+}
+
+.start-btn1:hover {
+    background-color: #92BDD0;
+    /* 或你想要的顏色 */
+    color: white;
+    /* 可選：文字也變色 */
+}
+
+.cus-txtw label {
+    display: flex;
+    padding-right: 40%;
+    margin-left: -20%;
+    margin-top: 0%;
+    line-height: 2;
+    font-size: 100%;
+}
+
+.cus-txtw1 label {
+    display: flex;
+    padding-right: 40%;
+    margin-left: -20%;
+    margin-top: 0%;
+    line-height: 2;
+    font-size: 100%;
+}
+
+@media(max-width: 850px) {
+
+    #cus-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #logo {
+        display: none;
+
+    }
+
+
+    .cus-txt12 {
+        margin-top: -160%;
+    }
+
+    .img20-1 {
+        width: 80%;
+
+    }
+
+    .cus-txtimg-1 {
+        margin-bottom: 10%;
+    }
+
+    .img22 {
+        display: grid;
+        margin-left: 25%;
+    }
+
+    .img23 {
+        display: grid;
+        margin-left: 25%;
+    }
+
+    .cus-txtw {
+        display: grid;
+        margin-top: 150%;
+        margin-left: -50%;
+    }
+
+    .cus-txtw1 {
+        display: grid;
+        margin-top: 150%;
+        margin-left: -50%;
+    }
+
+    .img19 {
+        position: relative;
+        margin-top: -60%
+    }
+
 }

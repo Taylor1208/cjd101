@@ -1,14 +1,54 @@
-
-
 body {
     background: black;
     color: white;
     margin-right: 10%;
     margin-left: 10%;
+    overflow-x: hidden;
+}
+
+#end {
+    position: fixed;
+    /* 固定在視窗上 */
+    top: 0;
+    /* 從視窗的頂部開始 */
+    left: 0;
+    /* 從視窗的左邊開始 */
+    width: 100vw;
+    /* 寬度佔滿整個視窗 */
+    height: 100vh;
+    /* 高度佔滿整個視窗 */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* 背景顏色可根據需要設置 */
+    z-index: 9998;
+    /* 設定z-index為負值，使其在其他元素之下 */
+}
+
+#hub-listall {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 50%;
+    line-height: 2;
+    background-color: rgb(33, 35, 37);
+    color: #95bcce;
+    z-index: 9999999;
+    cursor: pointer;
+    text-align: center;
+    transform: translateX(400%);
+    /* 預設隱藏，將選單推到左邊 */
+    transition: transform 0.5s ease;
+    /* 加入平滑的轉場效果 */
+}
+
+
+#hub-listall.open {
+    transform: translateX(100%);
+    /* 讓選單顯示出來，回到原位置 */
 }
 
 #logo {
     width: 200px;
+    max-width: 100%;
     margin-top: -50px;
     z-index: 99;
     position: relative;
@@ -46,7 +86,6 @@ ul {
 
 #home img {
     transition: opacity 0.5s ease, transform 0.5s ease;
-    position: relative;
 }
 
 .fade-out {
@@ -58,17 +97,20 @@ ul {
 .img-group {
     z-index: 97;
     position: relative;
-    display: grid;
+    display: inline;
+    width: 45%;
 }
 
 .img07 {
     margin-top: -200px;
     float: right;
     margin-right: 20px;
-    
+
 }
-.img07 img{
-    max-width: 450px;
+
+.img07 img {
+    max-width: 100%;
+    /* max-width: 450px; */
     width: auto;
 }
 
@@ -80,7 +122,8 @@ ul {
 }
 
 .img02 img {
-    max-width: 450px;
+    max-width: 100%;
+    /* max-width: 450px; */
     width: auto;
 }
 
@@ -91,7 +134,8 @@ ul {
 }
 
 .img03 img {
-    max-width: 500px;
+    max-width: 100%;
+    /* max-width: 500px; */
     width: auto;
 }
 
@@ -113,13 +157,12 @@ ul {
 
 .logo2 {
     z-index: 999;
-    margin-top: 100px;
     position: absolute;
-    top: -450px;
-    transform: translateX(-50%);
-    z-index: 9999;
-    max-width: 550px;
+
+    /* 因為版面80%,所以這邊圖片根據比例調整40% */
+    max-width: 40%;
     width: auto;
+    left: 50%;
 }
 
 
@@ -127,9 +170,15 @@ ul {
     margin-top: 150px;
 }
 
+.home2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.8fr;
+    gap: 30px;
+}
+
 .txt1 {
-    z-index: 80;
-    margin-left: 100px;
+    z-index: 99;
+    position: relative;
 }
 
 #txt1 {
@@ -137,122 +186,125 @@ ul {
 }
 
 .txt1 img {
-    max-width: 800px;
-    width: auto;
+    max-width: 100%;
+    /* max-width: 800px; */
+    width: 80%;
 }
 
-.txt3 {
-    max-width: 600px;
-    width: auto;
+.txt3 img {
+    max-width: 100%;
+    /* max-width: 600px; */
+    width: 80%;
 }
+
+.txt3 {}
 
 .txt4 {
-    float: left;
-    margin-left: 200px;
-    margin-top: -120px;
+    margin-top: -10%;
 }
 
+
 .txt4 img {
-    max-width: 20px;
+    max-width: 100%;
+    /* max-width: 20px; */
     width: auto;
+    height: 40vh;
 }
 
 .img08 {
-    margin-top: -150px;
-    margin-right: 200px;
     z-index: 96;
     float: right;
+    /* width: 40%; */
+    margin-top: -70%;
 }
 
-.img08 img{
-    max-width: 350px;
+.img08 img {
+    max-width: 100%;
+    /* max-width: 350px; */
     width: auto;
+
 }
 
 .img09 {
-    margin-top: 200px;
-    margin-left: 100px;
     z-index: 96;
+    /* width: 30%; */
 }
 
-.img09 img{
-    max-width: 250px;
+.img09 img {
+    max-width: 100%;
+    /* max-width: 250px; */
     width: auto;
 }
 
 .txtw1 {
-    margin-top: -300px;
-    margin-left: 400px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* width: 30%; */
+    font-size: 100%;
+    margin-top: -15%;
 }
 
-.txtw1 p {
-    line-height: 0;
-    z-index: 95;
+.txtw1 label {
+    text-align: justify;
+    line-height: 1.5;
+    display: block;
 }
+
+
 
 .img05 {
-    text-align: left;
-    margin-top: -30px;
-    margin-left: 600px;
+    margin-top: -5%;
+    margin-left: 50%;
 }
 
-.img05 img{
-    max-width: 500px;
+.img05 img {
+    max-width: 100%;
+    /* max-width: 500px; */
     width: auto;
 }
 
 .txt2 {
     z-index: 94;
-    margin-top: -10px;
-    margin-left: 100px;
+    margin-top: -10%;
+    margin-left: 20%;
 }
 
-.txt2 img{
-    max-width: 700px;
+.txt2 img {
+    max-width: 100%;
+    /* max-width: 700px; */
     width: auto;
 }
 
 .txt5 {
     z-index: 95;
-    margin-top: -100px;
-    margin-left: 250px;
+    margin-top: -10%;
+    margin-left: 30%;
 }
 
-.txt5 img{
-    max-width: 20px;
+.txt5 img {
+    max-width: 100%;
+    /* max-width: 20px; */
+    width: auto;
+    height: 40vh
+}
+
+
+/* .txt3  img{
+    width: 80%;
+    width: auto;
+} */
+
+.txt3 {
+    margin-top: 0%;
+    margin-right: 20%;
+    max-width: 60%;
     width: auto;
 }
 
-.img10 {
-    z-index: 95;
-    margin-top: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
 
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.home4-txt {
+    font-size: 200%;
 }
 
-.img10 img{
-    max-width: 1200px;
-    width: auto;
-}
 
-.img11 {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.img11 {
-    max-width: 1200px;
-    width: auto;
-}
 
 .hr {
     margin-top: 25px;
@@ -268,27 +320,18 @@ ul {
 }
 
 .logo1 {
-    z-index: 95;
+    z-index: -95;
     margin-left: 0;
 }
 
 #logo1-1 {
-    max-width: 200px;
+    max-width: 20%;
+    /* max-width: 200px; */
     width: auto;
 }
 
 #logo1-1 {
     margin-top: -60px;
-}
-
-.txt6 {
-    line-height: 0.8;
-    padding-bottom: 40px;
-    /* padding設定外框 margin是設定框架內排版 */
-}
-
-#txt6 {
-    margin-top: -50px;
 }
 
 #top-btn {
@@ -315,20 +358,164 @@ ul {
     font-family: Cinzel;
 }
 
-@media(min-width: 540px) {
-    .box1 {
-        background: lightyellow;
+@media (max-width:950px) {
+    .list {
+        display: none;
+
+    }
+
+    .hub {
+        display: flex !important;
+    }
+
+    #logo {
+        display: none;
+
+    }
+
+
+    body {
+        padding-top: 60%;
+        /* 預設為桌面版 */
     }
 }
 
-@media(min-width: 768px) {
-    .box1 {
-        background: orange;
+@media(max-width: 850px) {
+    .home2-1 {
+        display: grid;
+        grid-template-columns: 1fr;
     }
+
+
+
+    .img08 {
+        margin-top: 0;
+    }
+
+    .txtw1 {
+        margin-top: 0;
+    }
+
 }
 
-@media(min-width: 920px) {
-    .box1 {
-        background: lightpink;
-    }
+.menu {
+    width: 50px;
+    /* 圖片寬度 */
+    height: auto;
+    padding: 0;
+    border: none;
+}
+
+.hub {
+    position: fixed;
+    z-index: 9999;
+    background-color: #7494A3;
+    width: 80%;
+    height: 100px;
+    display: none;
+    top: -1px;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* 設定一個div區塊，填色並且加上logo的圖片 */
+}
+
+
+
+.button {
+    display: flex;
+    margin-right: 10px;
+}
+
+
+.img10 {
+    display: flex;
+    gap: 20px;
+    /* overflow-x: hidden; */
+
+}
+
+.item-img img {
+    width: 20vw;
+}
+
+.item-img-1 {
+    padding: 1vw 0 0;
+}
+
+.item-img-2 {
+    padding: 3vw 0 0;
+}
+
+.item-img-3 {
+    padding: 5vw 0 0;
+}
+
+.home3 {
+    position: relative;
+    margin-left: -10%;
+
+}
+
+.home4-img {
+    display: flex;
+    margin-top: 10%;
+}
+
+.home4 label {
+    display: grid;
+    place-items: center;
+}
+
+.img11-1 img {
+    max-width: 80%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.img11-2 img {
+    max-width: 80%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.img11-3 img {
+    max-width: 80%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.img11-4 img {
+    max-width: 80%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.img11-1 {
+    display: grid;
+    justify-items: center;
+}
+
+.img11-2 {
+    display: grid;
+    justify-items: center;
+}
+
+.img11-3 {
+    display: grid;
+    justify-items: center;
+}
+
+.img11-4 {
+    align-content: space-between;
+    justify-items: center;
+}
+
+.txt6 label {
+    max-width: 100%;
+    width: 80%;
 }

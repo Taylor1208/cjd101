@@ -7,3 +7,5 @@ grid-row-start
 格子/第幾列/從第幾列開始
 grid-row-end
 格子/第幾列/第幾列結束(不包含指定結束列，設定之後需再1才會是包含列的指定列高)
+grid-template-columns: repeat(2, 1fr);    /* 2 欄，等寬 */
+grid-template-rows: repeat(3, 150px);     /* 3 列，每列 150px 高 */

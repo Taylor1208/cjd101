@@ -96,7 +96,7 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="time"],
-button,
+.submit,
 select {
     width: 100%;
     /* 讓每個輸入框一樣寬 */

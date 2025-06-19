@@ -8,14 +8,48 @@
     <link rel="stylesheet" href="css/home.css">
     <script src="js/main.js"></script>
 </head>
+<style>
 
+</style>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const track = document.querySelector('.img10');
+        const itemWidth = 20;
 
+        setInterval(() => {
+            // 滑動一張的距離
+            track.style.transition = 'transform 0.5s ease';
+            track.style.transform = `translateX(-${itemWidth}vw)`;
+
+            // 等滑動完成後，把第一張移到最後，並 reset transform（無動畫）
+            setTimeout(() => {
+                track.style.transition = 'none';
+
+                // 將第一個元素移到最後
+                const firstItem = track.firstElementChild;
+                track.appendChild(firstItem);
+
+                // 清除 transform，回到初始位置
+                track.style.transform = 'translateX(0)';
+            }, 500); // 必須與 transition 時間相同
+
+        }, 2000); // 每 2 秒滑動一次
+    });
+</script>
 
 <body>
-    <!-- ▼按LOGO會回首頁的動作 -->
-    <img src="img/logo.png" id="logo" onclick="page_change('index')">
-    <div id="top" class="top">
-        <ul class="list">
+
+    <div id="end" onclick="hub_end()"></div>
+    <div class="hub">
+        <button onclick="hub_open()"><img src="img/menu.png" class="menu"></button>
+        <!-- 加入漢堡的圖片 -->
+        <img src="img/logo.png" width="100" class="hub-logo" onclick="page_change('index')">
+        <!-- 在漢堡秀出logo -->
+    </div>
+
+    <div id="hub-listall">
+        <ul class="hub-list">
+            <li onclick="page_change('about')">關於我們</li>
             <li onclick="page_change('cus')">訂製流程</li>
             <li onclick="page_change('pop')">熱門商品</li>
             <li onclick="page_change('reserve')">預約訂製</li>
@@ -23,6 +57,24 @@
             <li onclick="page_change('know')">聲學講堂</li>
         </ul>
     </div>
+
+
+
+    <!-- ▼按LOGO會回首頁的動作 -->
+    <img src="img/logo.png" id="logo" onclick="page_change('index')">
+
+    <div id="top" class="top">
+        <ul class="list">
+            <li onclick="page_change('about')">關於我們</li>
+            <li onclick="page_change('cus')">訂製流程</li>
+            <li onclick="page_change('pop')">熱門商品</li>
+            <li onclick="page_change('reserve')">預約訂製</li>
+            <li onclick="page_change('order')">訂單追蹤</li>
+            <li onclick="page_change('know')">聲學講堂</li>
+        </ul>
+    </div>
+
+
 
     <div id="content">
 
@@ -44,32 +96,58 @@
         <div id="home2">
             <div class="txt1"><img id="txt1" src="img/txt1.png"></div>
             <div class="txt4"><img src="img/txt4.png"></div>
-            <div class="img08"><img src="img/08.jpg"></div>
-            <div class="img09"><img src="img/09.jpg"></div>
-            <div class="txtw1">
+            <div class="home2-1">
+                <div class="img09"><img src="img/09.jpg"></div>
+                <div class="txtw1">
 
-                <p>由人工智慧與聲學技術結合，專為你的耳</p>
-                <p>型量身定製的音頻體驗。通過高精度的耳</p>
-                <p>部掃描，智能算法自動分析你的耳道形狀、</p>
-                <p>聽力需求與音質偏好，精準調校每一個頻率</p>
-                <p>範圍，讓你聽見最真實的音樂世界。</p>
-                <p>每一次配戴，都是一次與未來科技的對話。</p>
-                <p>從你耳朵的每一個微小曲線到聲波的每一</p>
-                <p>個細節，這款耳機會根據你的生理結構來</p>
-                <p>優化聲音輸出，打造無與倫比的私人聆聽</p>
-                <p>空間。
+                    <label>由人工智慧與聲學技術結合，專為你的耳型量身定製的音頻體驗。通過高精度的耳部掃描，智能算法自動分析你的耳道形狀、聽力需求與音質偏好，精準調校每一個頻率範圍，讓你聽見最真實的音樂世界。</label>
+                    <br>
+                    <label>每一次配戴，都是一次與未來科技的對。從你耳朵的每一個微小曲線到聲波的每一個細節，這款耳機會根據你的生理結構來優化聲音輸出，打造無與倫比的私人聆聽空間。</label>
+                </div>
+                <div class="img08"><img src="img/08.jpg"></div>
+
+
             </div>
-            <div class="img05"><img src="img/05.jpg"></div>
-            </p>
+
         </div>
+
         <div id="home3">
+            <div class="img05"><img src="img/05.jpg"></div>
             <div class="txt2"><img src="img/txt2.png"></div>
             <div class="txt5"><img src="img/txt5.png"></div>
-            <div class="img10"><img src="img/10.png"></div>
+            <div class="img10">
+                <div class="item-img item-img-1"><img src="img/10-1.png"></div>
+                <div class="item-img item-img-2"><img src="img/10-2.png"></div>
+                <div class="item-img item-img-3"><img src="img/10-3.png"></div>
+                <div class="item-img item-img-1"><img src="img/10-4.png"></div>
+                <!-- <div class="item-img item-img-1"><img src="img/10-5.png" ></div> -->
+                <div class="item-img item-img-2"><img src="img/10-6.png"></div>
+                <div class="item-img item-img-3"><img src="img/10-7.png"></div>
+            </div>
+
+
         </div>
         <div id="home4">
             <img src="img/txt3.png" class="txt3">
-            <div class="img11"><img src="img/11.png" class="img11"></div>
+            <div class="home4-img">
+                <div class="img11-1">
+                    <img src="img/11-1.png">
+                </div>
+                <div class="img11-2">
+                    <img src="img/11-2.png">
+                </div>
+                <div class="img11-3">
+                    <img src="img/11-3.png">
+                </div>
+                <div class="img11-4">
+                    <img src="img/11-4.png">
+                </div>
+            </div>
+
+
+
+
+
         </div>
 
     </div>
@@ -81,14 +159,17 @@
 
     <div id="home5">
         <div class="logo1">
-            <img id="logo1-1" src="img/logo.png" >
+            <img id="logo1-1" src="img/logo.png">
         </div>
         <div class="txt6">
             <p id="txt6">
-                <br>台中市北區進化北路238號8樓之2 (世基金融中心)</br>
-                <br>TEL：04-2236-0613 / 0968-288068</br>
-                <br>E-MAIL：service@mor-e.com.tw</br>
-                <br>營業時間：週一至週五 AM 08：30 - PM 06：00</br>
+                <label>台中市北區進化北路238號8樓之2 (世基金融中心)</label>
+                <br>
+                <label>TEL：04-2236-0613 / 0968-288068</label>
+                <br>
+                <label>E-MAIL：service@mor-e.com.tw</label>
+                <br>
+                <label>營業時間：週一至週五 AM 08：30 - PM 06：00</label>
             </p>
         </div>
     </div>
@@ -110,9 +191,9 @@
 
             parallaxImages.forEach(img => {
                 // 視差效果（向下滑動）
-                if(img.className == "logo2"){
+                if (img.className == "logo2") {
                     img.style.transform = `translate(-50%,${scrollY * 0.2}px)`;
-                }else{
+                } else {
                     img.style.transform = `translateY(${scrollY * 0.2}px)`;
 
                 }
@@ -126,6 +207,11 @@
             });
         });
     </script>
+
+
+
+
+
 
 
 

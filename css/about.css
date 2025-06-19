@@ -1,21 +1,43 @@
-
-
 .img13 {
-    display: flex;
-    top: -200px;
-    justify-content: center;
-    /* 水平置中 */
-    margin-top: -500px;
-    margin-left: 0;
-    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100vh;
+    background-image: url('../img/13.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
 }
 
 
+.about-all {
+    position: relative;
+    padding-top: 100vh;
+    /* 推出背景圖的高度 */
+}
 
-.about_txt7 {
-    margin-left: 430px;
+.about_txt6 img {
+    max-width: 60%;
+    width: auto;
+    /* width="400" */
+}
+
+
+.about_txt7 img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.about_txt7 img {
+    width: 3%;
+    /* 讓圖片最多佔 90%，避免貼齊邊緣 */
+    height: auto;
+    /* 自動調整高度比例 */
     margin-top: -100px;
+    /* 可調整微調位置 */
     z-index: 1;
 }
 
@@ -24,45 +46,171 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.img14 {
-    margin-left: 100px;
+.img14 img {
+    max-width: 80%;
+    width: auto;
+    margin-left: 50px;
+    /* width="300" */
 }
 
-.about-txt8 {
+
+img.about-txt8 {
+    max-width: 100%;
+    width: auto;
     margin-left: 1px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .about-txtw1 {
     line-height: 1;
     margin-left: 10px;
     font-size: 20px;
+
+}
+
+.txtw1 label {
+    text-align: justify;
+    line-height: 2;
+    display: block;
 }
 
 .about_txtw2 {
-    margin-left: 100px;
-    margin-top: 80px;
+    margin-left: 50px;
+    margin-top: 150px;
     font-size: 20px;
 }
 
-.img15 {
-    margin-top: 50px;
+.txtw2 label {
+    text-align: justify;
+    line-height: 2;
+    display: block;
 }
 
-.img16 {
-    margin-top: 100px;
+.txtw3 label {
+    margin-top: 150%;
+    text-align: justify;
+    line-height: 2;
+    display: block;
 }
 
 .about_txtw3 {
     line-height: 1;
-    margin-top: 80px;
+    margin-top: 50%;
     margin-left: 10px;
     font-size: 20px;
 }
 
+.txtw4 label {
+    text-align: justify;
+    line-height: 2;
+    display: block;
+}
+
+.img15 img {
+    max-width: 100%;
+    width: auto;
+    /* width="400" */
+    margin-top: 50px;
+}
+
+.img16 img {
+    max-width: 100%;
+    width: auto;
+    /* width="400" */
+    margin-top: 100px;
+}
+
+
+
 .about_txtw4 {
     line-height: 1;
-    margin-top: 80px;
+    margin-top: 30%;
     margin-left: 40px;
     font-size: 20px;
+}
+
+.anout_txt4 {
+    text-align: justify;
+    line-height: 2;
+    display: block;
+}
+
+.about-txt5 {
+    display: flex;
+    justify-content: center;
+    /* 水平置中，可以視需要調整 */
+    align-items: center;
+    /* 垂直置中（可選） */
+    gap: 20px;
+    /* 元素之間的間距（可依需求調整） */
+}
+
+.img17 img {
+    max-width: 100%;
+    width: auto;
+    /* width="200" */
+    z-index: -99;
+}
+
+.img18 img {
+    max-width: 100%;
+    width: auto;
+    margin-top: 140%;
+    margin-left: 10%;
+    /* width="200" */
+}
+
+@media (max-width:950px) {
+    .list {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .
+}
+
+@media(max-width: 850px) {
+    #about-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img15 {
+        order: 2;
+    }
+
+    .about_txtw2 {
+        order: 3;
+    }
+
+    .about_txtw3 {
+        order: 3;
+    }
+
+    .about-txt5 {
+        order: 4;
+    }
+
+    .about_txtw4 {
+        order: 5;
+    }
+
+    .about_txtw1,
+    .about_txtw2,
+    .about_txtw3,
+    .about_txtw4,
+    .about-txt5 {
+        margin: 30px auto;
+        max-width: 90%;
+        /* text-align: justify; */
+        line-height: 1.5;
+        display: block;
+    }
+
+    .img18 {
+        display: none;
+    }
 }
