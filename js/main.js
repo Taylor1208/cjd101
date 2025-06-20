@@ -9,9 +9,9 @@ function page_change(page_name) {
     // 這個網址是指在本機電腦上，開啟的網頁
 
     //GIT
-    // let url = "https://taylor1208.github.io/cjd101/" + page_name + ".html"
+    let url = "https://taylor1208.github.io/cjd101/" + page_name + ".html"
     //測試
-    let url = "http://127.0.0.1:5500/" + page_name + ".html"
+    // let url = "http://127.0.0.1:5500/" + page_name + ".html"
 
     // http://127.0.0.1:5500/about.html
     fetch(url)
@@ -24,7 +24,7 @@ function page_change(page_name) {
                 content.innerHTML = data; // 將內容覆蓋content元素中,innerHTML是指元素的內部HTML內容
 
             }
-           hub_end()
+            hub_end()
 
 
             console.log(data);
