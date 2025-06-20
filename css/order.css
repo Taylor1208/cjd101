@@ -1,34 +1,71 @@
+/* .img35 {
+    position: absolute;
+    top: -1%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/35.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    z-index: -1;
+} */
 
 
 .img35 {
+    background-image: url('../img/35.png');
     display: flex;
     justify-content: center;
-    /* 水平置中 */
-    margin-top: -500px;
+    margin-top: -60%;
     margin-left: 0;
     z-index: -99;
     width: 100%;
-
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    top: -160px;
+    /* margin-bottom: -36%; */
 }
 
+.order-35img {
+    display: flex;
+    margin-top: 40%;
+}
 
+.tat {
+    font-size: 300%;
+    display: grid;
+    justify-content: center;
+    font-size: clamp(24px, 4vw, 48px);
+}
 
+.tat-txt {
+    font-size: clamp(9px, 2.5vw, 24px);
+    font-size: 100%;
+    display: grid;
+    justify-content: center;
+}
 
+.tat,
+.tat-txt {
+
+    word-wrap: break-word;
+    /* 長文字換行 */
+    overflow-wrap: break-word;
+    /* 讓過長單字也會換行 */
+    max-width: 90%;
+    /* 避免過寬 */
+    margin: 0 auto;
+    /* 置中 */
+}
 
 input[type="text"],
 .submit,
 select {
     width: 100%;
     /* 讓每個輸入框一樣寬 */
-    max-width: 600px;
-    /* 最寬不要超過 400px */
-    padding: 10px 20px;
-    /* 內距：上下 10px、左右 20px */
-    margin-bottom: 15px;
+    max-width: 60%;
+    padding: 1% 2%;
+    margin-bottom: 5%;
     /* 每個輸入框下面留一點空間 */
     border: none;
     /* 拿掉外框 */
@@ -36,7 +73,7 @@ select {
     /* 超圓角，做出「膠囊形狀」 */
     background-color: #f2f2f2;
     /* 淺灰白背景 */
-    font-size: 24px;
+    font-size: 150%;
     /* 字大小 */
     box-sizing: border-box;
     /* 不會爆框 */
@@ -51,43 +88,56 @@ input::name {
     display: flex;
     justify-content: center;
     /* 水平置中 */
-    margin-top: 0;
+    margin-top: 2%;
     /* 拿掉負邊距 */
     margin-left: 0;
     /* 拿掉負邊距 */
-    z-index: 0;
+    z-index: 99;
     width: 100%;
     position: relative;
-    top: -500px;
 
 }
 
 button[type="submit"] {
+    border: none;
+    border-radius: 999px;
     background-color: white;
     color: black;
-    border: 1px solid black;
     cursor: pointer;
     transition: 0.3s;
-    z-index: 0;
-    width: 150px;
-
+    width: 150%;
+    /* font-size: 150%; */
+    font-size: clamp(13px, 2.5vw, 25px);
     display: flex;
     justify-content: center;
 
-    z-index: 0;
-    width: 100px;
+    z-index: 9999;
+    width: 10%;
     position: relative;
-    top: -500px;
-
-    position: relative;
+    top: -50%;
     left: 50%;
     transform: translateX(-50%);
-
-
 }
 
 button[type="submit"]:hover {
     background-color: black;
     color: white;
+}
 
+.form {
+    display: grid;
+    margin-top: -40%;
+}
+
+@media(max-width: 956px) {
+    .img35 {
+        display: grid;
+        margin-top: -100%;
+    }
+
+    .form {
+        display: grid;
+        margin-top: -70%;
+
+    }
 }

@@ -24,7 +24,7 @@ function page_change(page_name) {
                 content.innerHTML = data; // 將內容覆蓋content元素中,innerHTML是指元素的內部HTML內容
 
             }
-           hub_end()
+            hub_end()
 
 
             console.log(data);

@@ -1,29 +1,38 @@
-
-
-.img36 {
+/* .img36 {
     display: flex;
     justify-content: center;
-    /* 水平置中 */
-    margin-top: -500px;
+    width: 100%;
     margin-left: 0;
     z-index: -99;
     width: 100%;
-
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     top: -160px;
+} */
+.img36 {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: translateY(-150px);
+    /* 向上位移 */
+    z-index: 1;
 }
 
 .know-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: -100px;
+    margin-top: -150px;
+    /* 與圖片的距離，可視覺微調 */
+    position: relative;
+    z-index: 0;
 }
 
-.know-list img {
-    margin-left: 150px;
-}
+
+
+
+
 
 .know-txt {
     line-height: 0.8;
@@ -34,21 +43,62 @@
     line-height: 0.8;
     font-size: 20px;
     position: relative;
-    top: 100px;
+    top: 10%;
+    left: -5%;
 }
 
 .know-txt2 {
     margin-top: 100px;
 }
 
-.img38 {
-    margin-top: 100px;
+.img37 {
+    display: flex;
+    margin-top: 10%;
+    width: 80%;
+    height: auto;
 }
 
-.img39 {
-    margin-top: 100px;
+
+.know-label {
+
+    line-height: 1.5;
 }
 
-.img40 {
-    margin-top: 100px;
+.know-txt1 h2 {
+    font-size: clamp(18px, 3vw, 28px);
+}
+
+.know-txt1 h3 {
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+.know-label {
+    font-size: clamp(12px, 1.8vw, 18px);
+    line-height: 1.5;
+}
+
+@media(max-width: 1050px) {
+    .img36 {
+        position: relative;
+        transform: translateY(-380px);
+        /* 向上位移 */
+    }
+
+    .know-list {
+        grid-template-columns: 1fr;
+        margin-top: -50%;
+    }
+
+    .know-txt1 {
+        display: block;
+        width: 80%;
+        /* 與圖片 img37 同寬 */
+        margin: 0 auto;
+        /* 水平置中對齊圖片 */
+        word-wrap: break-word;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+
 }
