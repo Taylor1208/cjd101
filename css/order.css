@@ -95,7 +95,6 @@ input::name {
     z-index: 99;
     width: 100%;
     position: relative;
-
 }
 
 button[type="submit"] {
@@ -140,4 +139,31 @@ button[type="submit"]:hover {
         margin-top: -70%;
 
     }
+    button[type="submit"] {
+    transition: 0.3s;
+    width: 20%;
+    height: 110%;
+    font-size: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+input[type="text"],
+.submit,
+select {
+    font-size: 50%;
+    /* 字大小 */
+    box-sizing: border-box;
+    /* 不會爆框 */
+}
+
+.tat-txt {
+    font-size: 10px;
+}
+
+.order-txt {
+    margin-top: 5%;
+}
+
 }
