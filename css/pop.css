@@ -154,7 +154,47 @@ body {
         margin-left: -0%;
     }
 
+}
 
+@media(max-width: 430px) {
+    .img24 {
+        display: flex;
+        margin-top: 0%;
+    }
 
+    .pop-txt2 {
+        margin-top: 45%;
+    }
 
+    .img25,
+    .img26,
+    .img27,
+    .img28,
+    .img29,
+    .img30,
+    .img31,
+    .img32,
+    .img33 {
+        width: 45%;
+        height: auto;
+        display: block;
+    }
+
+    .pop25 {
+        width: 45%;
+        line-height: 2;
+        word-wrap: break-word;
+    }
+
+    .popc25 {
+    font-size: clamp(12px, 2.5vw, 30px);
+    /* 或設定成跟 .pop25 寬度一樣的固定寬度 */
+    /* text-align: center; */
+    margin-left: 15%;
+    /* 文字水平置中 */
+    margin-top: -3%;
+    line-height: 1;
+    margin-left: 10%;
+
+}
 }
