@@ -22,6 +22,7 @@ ul {
     display: inline;
 }
 
+
 .list li {
     display: inline-block;
     margin-right: 20px;
@@ -95,6 +96,7 @@ ul.list li:hover {
 
 
 input[type="text"],
+input[type="text1"],
 input[type="email"],
 input[type="date"],
 input[type="time"],
@@ -102,11 +104,10 @@ input[type="time"],
 select {
     width: 100%;
     /* 讓每個輸入框一樣寬 */
-    max-width: 600px;
-    /* 最寬不要超過 400px */
+    max-width: 50%;
     padding: 10px 20px;
     /* 內距：上下 10px、左右 20px */
-    margin-bottom: 15px;
+    margin-bottom: 10%;
     /* 每個輸入框下面留一點空間 */
     border: none;
     /* 拿掉外框 */
@@ -114,7 +115,7 @@ select {
     /* 超圓角，做出「膠囊形狀」 */
     background-color: #f2f2f2;
     /* 淺灰白背景 */
-    font-size: 24px;
+    font-size: 100%;
     /* 字大小 */
     box-sizing: border-box;
     /* 不會爆框 */
@@ -161,14 +162,12 @@ button[type="submit"]:hover {
         height: 50%;
     }
 
-    button[type="submit"] {
-        font-size: 150%;
-        border-radius: 999px;
-        width: 40%;
-        height: 20%;
-    }
-
     .res-txt1{
         font-size: 10%;
+    }
+
+    .mem-txtall{
+        display: flex;
+        margin-top: 100%;
     }
 }

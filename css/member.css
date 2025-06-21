@@ -1,12 +1,196 @@
 .img41 {
-    position: absolute;
-    top: -1%;
-    left: 0;
+    /* width: 100%;
+    height: auto; */
+    display: flex;
+    justify-content: center;
+    /* z-index: -1; */
+}
+
+.img41 img {
     width: 100%;
-    height: 100vh;
-    background-image: url('../img/41.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-    z-index: -1;
+    /* 或你需要的寬度 */
+    height: auto;
+    display: flex;
+    margin-top: -20%;
+}
+
+#mem-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mem-txt {
+    font-size: 200%;
+    display: flex;
+    margin-top: -100%;
+    margin-left: 3%;
+}
+
+.mem-txt1 {
+    font-size: 200%;
+    display: flex;
+    margin-left: 3%;
+}
+
+.mem-txt2 {
+    font-size: 90%;
+    display: inline-block;
+    width: fit-content;
+    /* max-width: 100%; */
+    margin-left: 3%;
+    white-space: normal;
+
+    max-width: 70%;
+    /* 控制最大寬度，避免太寬 */
+    white-space: normal;
+    word-break: break-word;
+}
+
+
+.form-container {
+    background: #f5f5f5;
+    width: 76%;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -120%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+}
+
+.form-container h2 {
+    text-align: center;
+    /* 標題置中 */
+    color: #777;
+    /* 字體顏色 */
+    margin-bottom: 16px;
+}
+
+
+.social-buttons {
+    display: flex;
+    /* 彈性排版 */
+    justify-content: space-between;
+    /* 平均分布 */
+    margin-bottom: 10px;
+}
+
+.social-btn {
+    background: black;
+    /* 黑色背景 */
+    color: white;
+    /* 白色字 */
+    border: none;
+    /* 無邊框 */
+    border-radius: 20px;
+    /* 圓角 */
+    padding: 8px 0;
+    width: 60px;
+    cursor: pointer;
+}
+
+.divider {
+    text-align: center;
+    /* 文字置中 */
+    color: #999;
+    /* 淺灰色字體 */
+    margin: 10px 0;
+}
+
+/* .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+} */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列 */
+    margin-bottom: 5%;
+    flex: 1;
+    /* 在 form-row 裡平均寬度 */
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #666;
+}
+
+.form-group input {
+    padding: 8px;
+    border: none;
+    background: #ccc;
+    /* 灰色底 */
+    border-radius: 6px;
+}
+
+.submit-btn {
+    background: #0d83ce;
+    /* 藍色按鈕 */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.mem-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 5%;
+    gap: 40px;
+    margin-top: -10%;
+    flex-wrap: wrap;
+    /* 小螢幕時會自動換行 */
+}
+
+@media(max-width: 1167px) {
+    #mem-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        display: grid;
+        margin-top: 200%;
+    }
+
+    .img41 {
+        position: fixed;
+        /* 固定在視窗，不會影響其他內容 */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        /* 視窗寬度 */
+        height: 100vh;
+        /* 視窗高度 */
+        z-index: -1;
+        /* 放到最底層 */
+        overflow: hidden;
+    }
+
+    .img41 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* 圖片等比例填滿容器 */
+        display: block;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .mem-top {
+        transform: translateY(500%);
+    }
+
+    .form-container {
+        transform: translateY(-130%);
+        margin-bottom: -170%;
+    }
 }
