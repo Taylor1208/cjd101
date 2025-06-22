@@ -190,12 +190,12 @@
     }
 
     .form-container {
-        transform: translateY(-80%);
+        transform: translateY(-100%);
         margin-bottom: -160%;
     }
 
     .mem-txtall{
-        transform: translateY(10%);
+        transform: translateY(20%);
     }
 
     .mem-txt{
