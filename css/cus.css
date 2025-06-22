@@ -257,7 +257,8 @@ body {
 }
 
 @media(max-width: 430px){
-    .cus-txt12 {
-        margin-top: -300%;
+    .cus-all{
+        position: relative;
+        margin-top: -150%;
     }
 }

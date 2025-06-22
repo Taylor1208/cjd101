@@ -400,9 +400,9 @@ ul {
 
 @media (max-width:430px) {
     .img07 {
-    margin-top: -170px;
-    float: right;
-}
+        margin-top: -170px;
+        float: right;
+    }
 
 }
 
@@ -462,6 +462,7 @@ ul {
 .home3 {
     position: relative;
     margin-left: -10%;
+
 
 }
 
@@ -550,4 +551,23 @@ ul {
     /* 可選：也可以加背景色 */
     transition: all 0.3s ease;
     /* 加入平滑變化 */
+}
+
+.img10all {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img10 {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+
+@media(max-width: 430px) {
+    .home3 {
+        width: 100%;
+    }
 }
