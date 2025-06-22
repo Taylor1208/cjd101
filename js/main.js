@@ -14,6 +14,24 @@ function page_change(page_name) {
     // let url = "http://127.0.0.1:5500/" + page_name + ".html"
 
     // http://127.0.0.1:5500/about.html
+
+
+    if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+        // ✅ 本機環境
+        console.log("本機環境");
+        // 你可以載入本機用的設定
+    } else {
+        // ✅ GitHub Pages 或其他線上環境
+        console.log("線上環境");
+        // 載入 GitHub Pages 的設定
+    }
+
+
+
+
+
+
+
     fetch(url)
         .then(async res => {
             let data = await res.text(); // 等待回應的文字內容
