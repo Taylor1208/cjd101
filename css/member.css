@@ -191,6 +191,21 @@
 
     .form-container {
         transform: translateY(-80%);
-        margin-bottom: -170%;
+        margin-bottom: -160%;
     }
+
+    .mem-txtall{
+        transform: translateY(10%);
+    }
+
+    .mem-txt{
+        font-size: 20px;
+    }
+    
+    .mem-txt1{
+        font-size: 20px;
+    }
+
+
+
 }
