@@ -571,4 +571,12 @@ ul {
     .home3 {
         width: 100%;
     }
+
+    .txt4 img {
+        max-width: 50%;
+    }
+
+    .txt5 img {
+        max-width: 50%;
+    }
 }
